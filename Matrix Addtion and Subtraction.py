@@ -1,13 +1,23 @@
-# mat1=[[1,2],[3,4]]
+#Matrix Addition/Subtraction
 
-# mat2=[[1,2],[3,4]]
+def mat_add(mat1,mat2):
+    res=[0,0,0,0]
+    for i in range(4):
+        res[i]+=mat1[i]+mat2[i]
+    return res
 
-# res=[[0,0],[0,0]]
 
-mat1=[1,2,3,4]
+def mat_sub(mat1,mat2):
+    res=[0,0,0,0]
+    for i in range(4):
+        res[i]-=mat1[i]-mat2[i]
+    return res
+
+
+
+mat1=[5,2,3,4]
 mat2=[1,2,3,4]
-res=[0,0,0,0]
 
-for i in range(4):
-    res[i]+=mat1[i]+mat2[i]
-print(res)
+print(mat_add(mat1,mat2))
+
+print(mat_sub(mat1,mat2))
